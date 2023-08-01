@@ -1,0 +1,59 @@
+.intro {
+    background: url("./../images/hero-bg.png"), linear-gradient(243.43deg, #7e5aff 16.9%, #55b7ff 83.27%);
+    background-repeat: no-repeat;
+    background-size: cover;
+    padding-top: 50px;
+    padding-bottom: 50px;
+
+    &__body {
+        max-width: 1600px;
+        font-family: "Montserrat", sans-serif;
+        text-align: center;
+        line-height: 1.23;
+        text-transform: uppercase;
+        color: $c-white;
+        padding: 103px 44px 0 47px;
+        margin: 0 auto;
+    }
+
+    &__title {
+        font-weight: 700;
+        font-size: $fs-main-title;
+        letter-spacing: 0.1em;
+        margin-bottom: 20px;
+    }
+
+    &__subtitle {
+        font-weight: 400;
+        font-size: $fs-section-subtitle;
+        letter-spacing: 0.3em;
+    }
+
+    &__scroll {
+        text-align: center;
+    }
+
+    &__link {
+        width: 40px;
+        height: 40px;
+        display: inline-flex;
+        border: 1px solid $c-white;
+        border-radius: 50%;
+        align-items: center;
+        justify-content: center;
+        color: $c-white;
+        transition: all 0.4s linear;
+        cursor: pointer;
+
+        & svg {
+            width: 10px;
+            height: 17px;
+        }
+
+        &:hover,
+        &:focus {
+            border: 1px solid $c-active;
+            color: $c-active;
+        }
+    }
+}

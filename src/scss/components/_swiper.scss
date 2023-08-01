@@ -1,0 +1,130 @@
+.intro-swiper {
+    width: 100%;
+    height: 378px;
+    margin-bottom: 123px;
+
+    & .swiper-pagination-bullet {
+        display: flex !important    ;
+        width: 10px;
+        height: 10px;
+        border: 1px solid $c-white;
+        border-radius: 50%;
+        background: none;
+        opacity: 1;
+        margin: 0 !important;
+
+        &:not(:last-child) {
+            margin-bottom: 40px !important;
+        }
+    }
+
+    & .swiper-pagination-bullet-active {
+        background: $c-white;
+    }
+
+    & .swiper-wrapper-intro {
+        padding-top: 120px;
+    }
+}
+
+.news-swiper {
+    position: static;
+
+    & .swiper-wrapper {
+        gap: 30px;
+        margin-bottom: 70px;
+        position: static;
+    }
+    & .swiper-slide {
+        width: 370px !important;
+    }
+
+    & .swiper-pagination-bullet {
+        width: 10px;
+        height: 10px;
+        border: 1px solid $c-white;
+        border-radius: 50%;
+        background: none;
+        opacity: 1;
+        margin: 0 !important;
+
+        &:not(:last-child) {
+            margin-right: 40px !important;
+        }
+    }
+
+    & .swiper-pagination-bullet-active {
+        background: $c-white;
+    }
+
+    & .swiper-button-prev {
+        width: 40px;
+        height: 40px;
+        position: absolute;
+        left: -60px;
+
+        &::after {
+            display: none;
+        }
+
+        & div {
+            width: 40px;
+            height: 40px;
+            display: inline-flex;
+            border: 1px solid $c-white;
+            border-radius: 50%;
+            align-items: center;
+            justify-content: center;
+            color: $c-white;
+            transition: all 0.4s linear;
+            cursor: pointer;
+
+            & svg {
+                transform: rotate(90deg);
+                width: 10px;
+                height: 17px;
+            }
+
+            &:hover,
+            &:focus {
+                border: 1px solid $c-active;
+                color: $c-active;
+            }
+        }
+    }
+    & .swiper-button-next {
+        width: 40px;
+        height: 40px;
+        position: absolute;
+        right: -60px;
+
+        &::after {
+            display: none;
+        }
+
+        & div {
+            width: 40px;
+            height: 40px;
+            display: inline-flex;
+            border: 1px solid $c-white;
+            border-radius: 50%;
+            align-items: center;
+            justify-content: center;
+            color: $c-white;
+            transition: all 0.4s linear;
+            cursor: pointer;
+
+            & svg {
+                transform: rotate(-90deg);
+                width: 10px;
+                height: 17px;
+            }
+
+            &:hover,
+            &:focus {
+                border: 1px solid $c-active;
+                color: $c-active;
+            }
+        }
+    }
+}

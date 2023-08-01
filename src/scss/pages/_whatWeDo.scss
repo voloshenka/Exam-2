@@ -1,0 +1,96 @@
+.whatWeDo {
+    font-family: "Montserrat", sans-serif;
+    padding-top: 127px;
+    padding-bottom: 153px;
+
+    &__section-title {
+        margin-bottom: 145px;
+    }
+
+    &__list {
+        display: flex;
+        gap: 178px;
+        flex-direction: column;
+    }
+    &__item {
+        display: flex;
+        position: relative;
+        gap: 70px;
+
+        &::before {
+            content: "";
+            display: block;
+            width: 585px;
+            height: 470px;
+            background: $c-user-data;
+            position: absolute;
+            top: -55px;
+            left: -215px;
+        }
+
+        &:nth-child(2n) {
+            flex-direction: row-reverse;
+            gap: 63px;
+
+            &::before {
+                background: $c-purple;
+                left: 800px;
+            }
+        }
+    }
+    &__img {
+        width: 630px;
+        height: 470px;
+        z-index: 2;
+    }
+    &__wrap {
+        padding-top: 95px;
+    }
+    &__subtitle {
+        font-weight: 400;
+        font-size: $fs-section-what-subtitle;
+        line-height: 1.23;
+        color: $c-main-text;
+    }
+    &__title {
+        font-weight: 700;
+        font-size: $fs-section-title;
+        line-height: 1.23;
+        color: $c-main-text;
+        margin-bottom: 20px;
+    }
+    &__text {
+        font-family: "Open Sans", sans-serif;
+        font-weight: 400;
+        font-size: $fs-main-text;
+        line-height: 1.67;
+        color: $c-main-text;
+        margin-bottom: 30px;
+    }
+
+    &__link {
+        display: block;
+        font-family: "Open Sans", sans-serif;
+        font-style: italic;
+        font-weight: 400;
+        font-size: $fs-city-link;
+        line-height: 1.33;
+        color: $c-black;
+        cursor: pointer;
+        transition: all 0.4s linear;
+
+        &:hover,
+        &:focus {
+            border-color: $c-active;
+            color: $c-active;
+        }
+
+        &.icon {
+            color: $c-main-text;
+        }
+    }
+}
+
+.whatWeDo-btn {
+    margin-bottom: 60px;
+}

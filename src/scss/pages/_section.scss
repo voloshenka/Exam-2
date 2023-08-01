@@ -1,0 +1,23 @@
+.section {
+    &__title {
+        font-family: "Montserrat", sans-serif;
+        font-weight: 700;
+        font-size: $fs-section-title;
+        line-height: 1.23;
+        text-align: center;
+        color: $c-main-text;
+        position: relative;
+        margin-bottom: 90px;
+
+        &::before {
+            content: "";
+            display: block;
+            width: 100px;
+            border: 1px solid $c-main-text;
+            position: absolute;
+            left: 50%;
+            margin-left: -50px;
+            top: -30px;
+        }
+    }
+}
